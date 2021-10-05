@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.kehzabr.boutique.HomeFragment"
+        android:label="@string/home_fragment_label"
+        tools:layout="@layout/home_fragment">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_RegisterOrder"
+            app:destination="@id/RegisterOrder" />
+        <action
+            android:id="@+id/action_HomeFragment_to_CustomerList"
+            app:destination="@id/CustomerList" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/RegisterOrder"
+        android:name="com.kehzabr.boutique.RegisterOrder"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/register_order">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_CustomerList"
+            app:destination="@id/CustomerList" />
+    </fragment>
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.kehzabr.boutique.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/CustomerList" />
+    </fragment>
+    <fragment
+        android:id="@+id/CustomerList"
+        android:name="com.kehzabr.boutique.CustomerList"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/customer_list">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+</navigation>

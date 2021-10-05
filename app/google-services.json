@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "33146497544",
+    "firebase_url": "https://kehzabr-6df43.firebaseio.com",
+    "project_id": "kehzabr-6df43",
+    "storage_bucket": "kehzabr-6df43.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:33146497544:android:e5272a778d903164aebfbd",
+        "android_client_info": {
+          "package_name": "com.kehzabr.boutique"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "33146497544-9s0v0ti48bv234bnhvvljm1t6r296h0c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKBR_Wv-0vwxVtu1Gi2lVJaAgrxga93Tc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "33146497544-9s0v0ti48bv234bnhvvljm1t6r296h0c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

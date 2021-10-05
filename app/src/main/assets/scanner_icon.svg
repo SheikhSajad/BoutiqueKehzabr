@@ -1,0 +1,34 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 67" width="96" height="67">
+	<title>noun_Barcode_1808836-svg</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #000000 } 
+		.txt1 { font-size: 5px;fill: #000000;font-family: "' Helvetica  Neue'" } 
+	</style>
+	<path id="Layer" class="shp0" d="M21 16L24 16L24 52L21 52L21 16Z" />
+	<path id="Layer" class="shp0" d="M27 16L30 16L30 46L27 46L27 16Z" />
+	<path id="Layer" class="shp0" d="M33 16L39 16L39 46L33 46L33 16Z" />
+	<path id="Layer" class="shp0" d="M48 16L51 16L51 46L48 46L48 16Z" />
+	<path id="Layer" class="shp0" d="M54 16L57 16L57 46L54 46L54 16Z" />
+	<path id="Layer" class="shp0" d="M60 16L69 16L69 46L60 46L60 16Z" />
+	<path id="Layer" class="shp0" d="M72 16L75 16L75 52L72 52L72 16Z" />
+	<path id="Layer" class="shp0" d="M27 49L30 49L30 52L27 52L27 49Z" />
+	<path id="Layer" class="shp0" d="M33 49L39 49L39 52L33 52L33 49Z" />
+	<path id="Layer" class="shp0" d="M48 49L51 49L51 52L48 52L48 49Z" />
+	<path id="Layer" class="shp0" d="M54 49L57 49L57 52L54 52L54 49Z" />
+	<path id="Layer" class="shp0" d="M42 16L45 16L45 46L42 46L42 16Z" />
+	<path id="Layer" class="shp0" d="M42 49L45 49L45 52L42 52L42 49Z" />
+	<path id="Layer" class="shp0" d="M60 49L69 49L69 52L60 52L60 49Z" />
+	<path id="Layer" class="shp0" d="M27 7L27 10L15 10L15 22L12 22L12 7L27 7Z" />
+	<path id="Layer" class="shp0" d="M84 7L84 22L81 22L81 10L69 10L69 7L84 7Z" />
+	<path id="Layer" class="shp0" d="M27 61L27 58L15 58L15 46L12 46L12 61L27 61Z" />
+	<path id="Layer" class="shp0" d="M84 61L84 46L81 46L81 58L69 58L69 61L84 61Z" />
+	<text id="Created by Simon Sim" style="transform: matrix(1,0,0,1,0,97)" >
+		<tspan x="0" y="0" class="txt1">Created by Simon Sim
+</tspan>
+	</text>
+	<text id="from the Noun Project" style="transform: matrix(1,0,0,1,0,102)" >
+		<tspan x="0" y="0" class="txt1">from the Noun Project
+</tspan>
+	</text>
+</svg>
