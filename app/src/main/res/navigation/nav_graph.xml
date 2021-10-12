@@ -5,6 +5,8 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/HomeFragment">
 
+
+
     <fragment
         android:id="@+id/HomeFragment"
         android:name="com.kehzabr.boutique.HomeFragment"

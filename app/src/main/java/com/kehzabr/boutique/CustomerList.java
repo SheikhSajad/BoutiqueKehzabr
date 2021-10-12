@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -19,9 +21,10 @@ import com.google.firebase.database.Query;
 public class CustomerList extends Fragment {
 
     private RecyclerView customerListRecyclerView;
-    CustomerListAdapter adapter;
-    DatabaseReference mbase;
-    Context mContext;
+    private CustomerListAdapter adapter;
+    private DatabaseReference mbase;
+    private Context mContext;
+    private ProgressBar progress;
 
     @Override
     public void onAttach(@NonNull Context context) {
@@ -48,6 +51,7 @@ public class CustomerList extends Fragment {
                 .child("CustomerList")
                 .limitToLast(50);
         customerListRecyclerView = view.findViewById(R.id.customerListRecyclerView);
+        progress = view.findViewById(R.id.progressBar);
         customerListRecyclerView.setLayoutManager(
                 new LinearLayoutManager(mContext));
 
@@ -57,7 +61,10 @@ public class CustomerList extends Fragment {
                 .setQuery(query, Customer.class)
                 .build();
 
-        adapter = new CustomerListAdapter(options);
+        adapter = new CustomerListAdapter(mContext, progress, options) {
+
+
+        };
         customerListRecyclerView.setAdapter(adapter);
 
     }

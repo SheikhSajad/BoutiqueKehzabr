@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         BottomNavigationView navView = findViewById(R.id.bottomNav_view);
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.navigation_home, R.id.navigation_report, R.id.navigation_search)
+                R.id.HomeFragment, R.id.CustomerList, R.id.RegisterOrder)
                 .build();
 
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);

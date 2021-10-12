@@ -1,9 +1,12 @@
 package com.kehzabr.boutique;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -15,9 +18,14 @@ import java.util.List;
 
 public class CustomerListAdapter extends FirebaseRecyclerAdapter<Customer, CustomerListAdapter.customerViewholder> {
 
-    public CustomerListAdapter(
-            @NonNull FirebaseRecyclerOptions<Customer> options) {
+    private Context mContext;
+    private ProgressBar progressBar;
+
+    public CustomerListAdapter(Context context, ProgressBar progress,
+                               @NonNull FirebaseRecyclerOptions<Customer> options) {
         super(options);
+        this.mContext = context;
+        this.progressBar = progress;
 
     }
 
@@ -25,6 +33,12 @@ public class CustomerListAdapter extends FirebaseRecyclerAdapter<Customer, Custo
     protected void onBindViewHolder(@NonNull CustomerListAdapter.customerViewholder holder, int position, @NonNull Customer model) {
 
         holder.bind(model);
+    }
+
+    @Override
+    public void onDataChanged() {
+        super.onDataChanged();
+        progressBar.setVisibility(View.GONE);
     }
 
     @NonNull

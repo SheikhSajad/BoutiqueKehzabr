@@ -53,8 +53,7 @@ public class BarcodeScannerActivity extends AppCompatActivity
     private int lensFacing = CameraSelector.LENS_FACING_BACK;
     private CameraSelector cameraSelector;
 
-    private static final String STATE_SELECTED_MODEL = "selected_model";
-    private static final String STATE_LENS_FACING = "lens_facing";
+     private static final String STATE_LENS_FACING = "lens_facing";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
