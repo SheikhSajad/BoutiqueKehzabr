@@ -9,6 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -59,6 +60,7 @@ public class CustomerListAdapter extends FirebaseRecyclerAdapter<Customer, Custo
     class customerViewholder
             extends RecyclerView.ViewHolder {
         TextView customerName, mobile, date, barcode;
+        ConstraintLayout constraint_layout;
 
         public customerViewholder(@NonNull View itemView) {
             super(itemView);
@@ -67,6 +69,7 @@ public class CustomerListAdapter extends FirebaseRecyclerAdapter<Customer, Custo
             mobile = itemView.findViewById(R.id.mobile);
             date = itemView.findViewById(R.id.date);
             barcode = itemView.findViewById(R.id.barcode);
+            constraint_layout = itemView.findViewById(R.id.constraint_layout);
 
         }
 
@@ -75,6 +78,12 @@ public class CustomerListAdapter extends FirebaseRecyclerAdapter<Customer, Custo
             mobile.setText(item.getMobile());
             date.setText(item.getDate());
             barcode.setText(item.getBarcode());
+            constraint_layout.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                  }
+            });
         }
 
 

@@ -3,6 +3,7 @@ package com.kehzabr.boutique;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
@@ -54,8 +55,6 @@ public class CustomerList extends Fragment {
         progress = view.findViewById(R.id.progressBar);
         customerListRecyclerView.setLayoutManager(
                 new LinearLayoutManager(mContext));
-
-
         FirebaseRecyclerOptions<Customer> options
                 = new FirebaseRecyclerOptions.Builder<Customer>()
                 .setQuery(query, Customer.class)

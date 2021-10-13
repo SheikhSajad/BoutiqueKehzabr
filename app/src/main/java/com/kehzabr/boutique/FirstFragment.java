@@ -134,9 +134,7 @@ public class FirstFragment extends Fragment {
         stopTV = view.findViewById(R.id.btnStop);
         playTV = view.findViewById(R.id.btnPlay);
         stopplayTV = view.findViewById(R.id.btnStopPlay);
-        record = view.findViewById(R.id.record);
-        recordingStatus = view.findViewById(R.id.record_status);
-        startTV.setOnClickListener(new View.OnClickListener() {
+         startTV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // start recording method will start the recording of audio.
@@ -185,39 +183,9 @@ public class FirstFragment extends Fragment {
                 return false;
             }
         });
-        view.findViewById(R.id.record).setOnClickListener(new View.OnClickListener() {
 
-            boolean mStartRecording = true;
 
-            @Override
-            public void onClick(View view) {
-                onRecord(mStartRecording);
-                if (mStartRecording) {
-                    recordingStatus.setText("Stop Recording");
-                    //stop Recording
-                } else {
-                    //Start Recording
-                }
-                mStartRecording = !mStartRecording;
-            }
-        });
 
-        view.findViewById(R.id.play).setOnClickListener(new View.OnClickListener() {
-
-            boolean mStartPlaying = true;
-
-            @Override
-            public void onClick(View view) {
-                onPlay(mStartPlaying);
-                if (mStartPlaying) {
-                    recordingStatus.setText("Stop Recording");
-                    //stop Recording
-                } else {
-                    //Start Recording
-                }
-                mStartPlaying = !mStartPlaying;
-            }
-        });
     }
 
     private void onRecord(boolean start) {
